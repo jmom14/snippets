@@ -1,0 +1,10 @@
+porcentaje sirve para disenno responsive
+u. medida pz, em, rem
+colores rgb ventaja puede tener un cuarto parametro que representa la opacidad
+elemntos inline y block
+inline ocupa el espacio necesario
+block ocupa todo el ancho
+
+inline no se puede modificar height, width, margin  
+
+5 poscionamiento (static, absolute, relative, flotante, fixed)

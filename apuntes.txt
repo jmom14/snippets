@@ -1,0 +1,41 @@
+---singleton---
+
+-Constructor de la clase (private)
+-Crear una variable de clase del tipo de la clase(static) (private)
+-crear un metodo que crea la instancia si no existe tal instancia
+
+--transactional--
+para poder eliminar los metodos de begin, commit y rollback
+
+ @PersistenceContext
+ private EntityManager entityManager;
+
+se creo un metodo para hacer una accion que se puede hacer con un metodo de EM
+
+Las variable se declaro dentro de cada metodo
+
+www.cursosmegaup.bid
+
+---Angular---
+
+decoradores convierten clases normales en clases especiales
+4 tipos de clases
+
+Componente: Clase que controla una vista, un componente angular puede contener mas componentes
+Para que un componente se comunique con los componentes que tiene dentro hay dos formas:
+enviar datos PROPIEDADES @Input() entradaDeDatos;
+recibir datos EVENTOS @Output() salidaDeDatos=new EventEmitter; 
+3 Tipos de bindings
+Binding de propiedad en la etiqueta del componente, si cambia el valor el componente lo va a recibir
+Bindind de evento (si el componete hijo emite un evento el componente padre es notificado)
+bindind doble combinacion de los dos anteriores
+
+Directiva: Estructural
+
+Modulo: clase principal, dependencias de la app, componentes que va a contener, cual de ellos es el principal
+
+Servicios: clases que pueden ser usados por los componentes para pedir datos u operaciones, para aislar toda la
+logica de negocio de la aplicacion, normalmente para hacer peticiones a apis, un mismo servicio en
+multiples componentes
+
+
