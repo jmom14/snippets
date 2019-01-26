@@ -8,4 +8,4 @@ git remote add origin https://github.com/jmom14/SQL-SNIPPETS.git
 git push origin master
 
 git checkout "rama"
-git checkout -b "rama"
+git checkout -b "rama" //Crear y cambiar rama
