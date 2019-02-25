@@ -1,0 +1,9 @@
+//Compile y generate war file
+
+Run as > maven install
+
+//path of war
+//execute the war
+//8080 port available
+
+java -jar .\file-name.war
