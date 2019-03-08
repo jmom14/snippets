@@ -1,0 +1,14 @@
+>> npm install -g @angular/cli
+
+>> ng new my-app
+
+>> cd my-dream-app
+
+>> ng serve -o
+
+//update packages
+>> npm install package@latest
+example
+>> npm install bcrypt@latest
+>> npm install webpack-dev-server@latest
+
