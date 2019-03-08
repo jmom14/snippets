@@ -1,0 +1,4 @@
+Ctrl+K Ctrl+C	Add Line Comment	editor.action.addCommentLine
+Ctrl+K Ctrl+U	Remove Line Comment	editor.action.removeCommentLine
+Ctrl+/			Toggle Line Comment	editor.action.commentLine
+Shift+Alt+A		Toggle Block Comment	editor.action.blockComment
