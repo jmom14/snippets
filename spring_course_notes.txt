@@ -1,0 +1,12 @@
+ResponseBody - Retorna en el cuerpo de la respuesta json/xml
+
+Controller comun anotado con ResponseBody
+RestController
+Metodo que devulve json/xml/pdf/csv/xlxs
+
+Marshalling - Serializar
+Object -> XML
+
+Unmarshalling - Deserializar
+XML -> Object
+
