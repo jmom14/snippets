@@ -9,6 +9,7 @@
 >> npm install webpack-dev-server@latest
 
 >> ng update @angular/cli @angular/core
+>> ng update @angular/cli --migrate-only --from=1.4.7
 
 package.json - relacionado con node-modules - dependencias - archivo de configuracion principal
 package-lock.json - configuracion de angular 
