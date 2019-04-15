@@ -13,3 +13,9 @@ XML -> Object
 JSON.parse() JSON to Object
 JSON.stringify() Object to JSON
 
+-----------------------------------------------------------------------------
+Implementando JWT
+
+Filtros HTTP
+
+Filtro interceptor para realizar la autenticacion credenciales, user, pass
