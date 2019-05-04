@@ -1,0 +1,22 @@
+Sistema de procesamiento de datos en memoria que distribuye eficientemente el trabajo en varias maquinas
+
+Spark context representa la conexion a un cluster Spark
+
+Acciones 
+Transformaciones
+
+Particones de datos
+
+Reduccion de costos de comunicacion entre nodos de trabajo si garantizamos que los datos estan en el mismo nodo
+
+Operaciones que pueden ser afectadas por el particionado
+
+Operaciones como map podrian hacer que el nuevo RDD pierda la informacion original particionada, ya que esas operaciones pueden, en teoria, cambiar la clave de cada elemento del RDD
+
+*RDD clave-valor*
+
+La transformacion mapValues garantiza que la clave de cada tupla sea la misma
+
+Es preferible usar mapValues en lugar de la operacion map
+
+-Uniones son muy caras
