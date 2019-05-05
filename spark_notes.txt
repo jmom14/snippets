@@ -2,7 +2,15 @@ Spark es un sistema de procesamiento de datos en memoria que distribuye eficient
 Spark context representa la conexion a un cluster Spark
 
 Acciones 
+Las acciones generan un valor final al programa driver	o mantienen los datos de un sistema de almacenamiento interno 
+Las acciones obligaran la evaluacion de las transformaciones requeridas para el RDD al que fueron llamadas
+Acciones mas populares --collect --count --countByValue --take --saveAsTextFile --reduce
+
 Transformaciones
+Operaciones sobre RDDs las cuales generan como resultado un nuevo RDD
+Las dos transformaciones mas comunes filter y map
+
+
 
 Particones de datos
 Reduccion de costos de comunicacion entre nodos de trabajo si garantizamos que los datos estan en el mismo nodo
