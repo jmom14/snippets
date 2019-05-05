@@ -18,4 +18,9 @@ Implementando JWT
 
 Filtros HTTP
 
+Deben implementar la interfaz Filter o extender la clase abstracta GenericFilterBean
+Cuando se invoca chain.doFilter(...) continua con la ejecucion del controlador y si tiene mas filtros asociados continua con la ejecucion den cadena hasta llegar al metodo handler
+
+
 Filtro interceptor para realizar la autenticacion credenciales, user, pass
+
