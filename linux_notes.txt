@@ -1,2 +1,11 @@
 sudo apt update
 sudo apt-get install git
+
+//extract/install
+tar -xzvf jdk-8u65-linux-x64.gz
+
+//zip
+unzip file.zip	
+
+//execute jars
+java -jar file.jar

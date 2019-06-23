@@ -1,0 +1,1 @@
+Lamda: Metodo anonimo que no necesita identificador para ser llamado
