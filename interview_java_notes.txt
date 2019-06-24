@@ -1,1 +1,39 @@
+Clase: Definicion de las propiedades y funcionalidades de un objeto
+
+Objeto: Instancia de una clase con atributos y operaciones dispobibles
+
 Lamda: Metodo anonimo que no necesita identificador para ser llamado
+
+interface:
+Obliga a la clase que la implementa a sobrescribir todos los metodos que sean declarados(calse 100% abstracta)
+Puede heredar de otra interface
+Los metodos en las interfaces son public-abstract por defecto
+Variables en las interfacea son public-static-final por defecto
+Puede tener metodos default (Java 8)
+
+Clase abstracta:
+No puede ser instanciada y debe tener al menos un metodo abstracto
+
+Final:
+
+Finally: 
+
+Finalize: metodo llamado por el recolector de basura (Gargage Collector) de un objeto cuando la recolección de elementos no utilizados determina que no hay más referencias al objeto.
+
+List: permite duplicados, no tiene ordenamiento
+
+Set: no permite duplicados tiene ordenamiento
+
+Map: llave-valor, llaves no pueden ser duplicadas
+
+Serializacion: Permite convertir un objeto a bytes que pueden ser leidos y posteriormente volver a construir el objeto
+
+
+
+
+
+El garbage collector remueve todas las variables que no son instanciadas
+
+Diferencia entre callable y runable: callable si regresa informacion, runable\
+
+Rest es la arquitectura y restful es la implementacion de la arquitectura con web services
