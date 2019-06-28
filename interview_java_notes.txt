@@ -14,9 +14,9 @@ Puede tener metodos default (Java 8)
 Clase abstracta:
 No puede ser instanciada y debe tener al menos un metodo abstracto
 
-Final:
+Final: Determina que un atributo no puede ser sobreescrito o redefinido
 
-Finally: 
+Finally: Bloque de codigo que se ejecuta al final de un bloque try-catch
 
 Finalize: metodo llamado por el recolector de basura (Gargage Collector) de un objeto cuando la recolección de elementos no utilizados determina que no hay más referencias al objeto.
 
@@ -28,8 +28,20 @@ Map: llave-valor, llaves no pueden ser duplicadas
 
 Serializacion: Permite convertir un objeto a bytes que pueden ser leidos y posteriormente volver a construir el objeto
 
+Rest: Representational State Transfer
+Interfaz entre sistemas que use protocolo HTTP para obtener datos o generar operaciones sobre esos datos en todos los formatos posible
+Interfaz de programación de aplicaciones que se apoya en la arquitectura REST para el desarrollo de aplicaciones en red
+URI: uniform resource identifier
+Cadena de caracteres que identifica los recursos de una red de forma unívoca
 
+403 (Acceso prohibido)
+400 (petición incorrecta, p.ej. falta un campo o su valor no es válido)
+404 (Not found)
+500 (Error del lado del servidor al intentar crear el recurso, p.ej. se ha caído la BD)
+201 (Recurso creado correctamente)
+200 (Recurso modificado correctamente)
 
+Token: es un valor que nos autentica en el servidor
 
 
 El garbage collector remueve todas las variables que no son instanciadas
