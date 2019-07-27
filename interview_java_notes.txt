@@ -26,7 +26,21 @@ Set: no permite duplicados tiene ordenamiento
 
 Map: llave-valor, llaves no pueden ser duplicadas
 
+LinkedList elementos doblemente ligados entresi, rapido para agregar o quitar elementos, lento para obtener los datos
+
+ArrayList, rapido para el acceso a la informacion, lento para el ordenamiento en caso de quitar un elemento y mantener las posiciones
+
 Serializacion: Permite convertir un objeto a bytes que pueden ser leidos y posteriormente volver a construir el objeto
+
+Checked Exception: Todas las excepciones de este tipo son subclases que heredan desde Exception
+
+Exceptions tipo Error: Excepciones en las que el sistema no puede hacer nada con ellas, son clasificadas como errores irreversibles y que en su mayoría provienen desde la JVM, como por ejemplo: IOError, NoClassDefFoundError, NoSuchMethodError, OutOfMemoryError y VirtualMachineError
+
+Unchecked Exception: Errores en tiempo de Runtime, no tienen la obligación de ser declaradas con la cláusula throws, no se tiene la obligación de atraparlas con un catch
+
+Servlets: deben implementar la clase abstracta httpservlet e implementar doget dopost
+
+Https request y response: ???
 
 Rest: Representational State Transfer
 Interfaz entre sistemas que use protocolo HTTP para obtener datos o generar operaciones sobre esos datos en todos los formatos posible
@@ -34,18 +48,19 @@ Interfaz de programación de aplicaciones que se apoya en la arquitectura REST p
 URI: uniform resource identifier
 Cadena de caracteres que identifica los recursos de una red de forma unívoca
 
+Token: es un valor que nos autentica en el servidor
+
+Hilos: Un hilo es un flujo de control dentro de un programa. Creando varios hilos podremos realizar varias tareas simultáneamente. Cada hilo tendrá sólo un contexto de ejecución (contador de programa, pila de ejecución). Es decir, a diferencia de los procesos UNIX, no tienen su propio espacio de memoria sino que acceden todos al mismo espacio de memoria común, por lo que será importante su sincronización cuando tengamos varios hilos accediendo a los mismos objetos
+
+El garbage collector remueve todas las variables que no son instanciadas
+
+Diferencia entre callable y runable: callable si regresa informacion, runable
+
+Rest es la arquitectura y restful es la implementacion de la arquitectura con web services
+
 403 (Acceso prohibido)
 400 (petición incorrecta, p.ej. falta un campo o su valor no es válido)
 404 (Not found)
 500 (Error del lado del servidor al intentar crear el recurso, p.ej. se ha caído la BD)
 201 (Recurso creado correctamente)
 200 (Recurso modificado correctamente)
-
-Token: es un valor que nos autentica en el servidor
-
-
-El garbage collector remueve todas las variables que no son instanciadas
-
-Diferencia entre callable y runable: callable si regresa informacion, runable\
-
-Rest es la arquitectura y restful es la implementacion de la arquitectura con web services

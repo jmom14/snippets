@@ -3,6 +3,11 @@ sudo apt upgrade
 sudo apt-get install git
 sudo apt-get --purge remove software
 
+cp -r directorio/ ruta_de_destino/nombre_copia
+cp -r fonts/ ../fonts2
+cp -r fonts/ fonts2
+mv directorio ruta_de_destino/nombre_directorio
+
 //extract/install
 tar -xzvf jdk-8u65-linux-x64.gz
 

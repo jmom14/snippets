@@ -1,7 +1,9 @@
-ResponseBody - Retorna en el cuerpo de la respuesta json/xml
+@ResponseBody - Retorna en el cuerpo de la respuesta json/xml
+@RestController Controller comun anotado con ResponseBody
+@ComponentScan Busca y registra en el contenedor de Spring todas las clases anotadas como stereotipo
+CORS(cross-origin resource sharing) Enviar y recibir datos de un dominio a otro
+Interactua el navegador web y el servidor
 
-Controller comun anotado con ResponseBody
-RestController
 Metodo que devulve json/xml/pdf/csv/xlxs
 
 Marshalling - Serializar
@@ -20,7 +22,5 @@ Filtros HTTP
 
 Deben implementar la interfaz Filter o extender la clase abstracta GenericFilterBean
 Cuando se invoca chain.doFilter(...) continua con la ejecucion del controlador y si tiene mas filtros asociados continua con la ejecucion den cadena hasta llegar al metodo handler
-
-
 Filtro interceptor para realizar la autenticacion credenciales, user, pass
-
+java -jar miaplicacion.jar --spring.config.location=file: C:/properties_externo_al_jar/application.properties

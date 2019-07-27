@@ -8,7 +8,6 @@ Run as > maven install
 
 >> java -jar .\file-name.war
 
-
 >> mvn build      
 >> mvn clean             //clean target directory
 >> mvn install			 //build and install artifacts into de local repository
