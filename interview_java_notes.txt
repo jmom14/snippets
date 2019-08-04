@@ -2,9 +2,12 @@ Clase: Definicion de las propiedades y funcionalidades de un objeto
 
 Objeto: Instancia de una clase con atributos y operaciones dispobibles
 
+Polimorfismo: Habilidad de ejecutar metodos sintaticamente iguales en tipos distintos
+
 Lamda: Metodo anonimo que no necesita identificador para ser llamado
 
 interface:
+Definen comportamiento
 Obliga a la clase que la implementa a sobrescribir todos los metodos que sean declarados(calse 100% abstracta)
 Puede heredar de otra interface
 Los metodos en las interfaces son public-abstract por defecto
@@ -34,11 +37,25 @@ Serializacion: Permite convertir un objeto a bytes que pueden ser leidos y poste
 
 Checked Exception: Todas las excepciones de este tipo son subclases que heredan desde Exception
 
+Excepcion: Situacion no esperada en la ejecucion de un programa Java
+
 Exceptions tipo Error: Excepciones en las que el sistema no puede hacer nada con ellas, son clasificadas como errores irreversibles y que en su mayoría provienen desde la JVM, como por ejemplo: IOError, NoClassDefFoundError, NoSuchMethodError, OutOfMemoryError y VirtualMachineError
 
 Unchecked Exception: Errores en tiempo de Runtime, no tienen la obligación de ser declaradas con la cláusula throws, no se tiene la obligación de atraparlas con un catch
 
 Servlets: deben implementar la clase abstracta httpservlet e implementar doget dopost
+
+Autoboxing: Compilador convierte un tipo primitivo a un tipo object
+
+Unboxing: Compilador convierte un objeto a tipo primitivo
+
+Upcasting: Clase inferior a clase superior
+
+Downcasting: Clase superior a clase inferior
+
+Hashcode: Numero que representa un objeto y genera el numero de acuerdo a sus atributos
+
+API: Conjunto de clses Java enpaquetadas en JAR con funciones especificas
 
 Https request y response: ???
 

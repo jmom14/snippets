@@ -4,6 +4,8 @@
 CORS(cross-origin resource sharing) Enviar y recibir datos de un dominio a otro
 Interactua el navegador web y el servidor
 
+Para mostrar formato xml tras una peticion a un metodo rest es necesario una clase wrapper ?format=xml
+
 Metodo que devulve json/xml/pdf/csv/xlxs
 
 Marshalling - Serializar
@@ -14,9 +16,17 @@ XML -> Object
 
 JSON.parse() JSON to Object
 JSON.stringify() Object to JSON
+Object Mapper Objeto a JSON
 
 -----------------------------------------------------------------------------
 Implementando JWT
+
+Tokens garantiza acceso a diferentes recursos sin guardar sesiones
+Se recomienda mandar el TOKEN en la cabecera http
+LocalStorage queda de forma persistente en el equipo
+SessionStorage queda activo mientras este activo el navegador
+Claims: datos del usuario 
+Token: Header, Payload, firma
 
 Filtros HTTP
 

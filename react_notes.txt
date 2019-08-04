@@ -1,0 +1,7 @@
+npm ins
+
+npm init/ inicia nuevo proyecto 
+npm install -s webpack/instala webpack
+npm install -g webpack/instalar webpack de manera global
+
+Diseno orientado a componentes lo que permite que solo actualice una parte de la aplicacion
