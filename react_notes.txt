@@ -1,7 +1,20 @@
-npm ins
+npm i -g create-react-app
+create-react-app sample-app
 
-npm init/ inicia nuevo proyecto 
-npm install -s webpack/instala webpack
-npm install -g webpack/instalar webpack de manera global
+Diseño orientado a componentes lo que permite que solo actualice una parte de la aplicacion
 
-Diseno orientado a componentes lo que permite que solo actualice una parte de la aplicacion
+Ciclo de vida react
+componentDidMount()
+componentWillMount()
+componentDidUpdate()
+componentWillUnmount()
+
+Context API
+
+puedes pasar el satate o funciones desde el componente principal hasta los hijos, sin necesidad de pasarlo por cada componente.
+
+Puede actualizar el state desde el hijo.
+
+Provider: Donde se crean los datos, state y funciones.
+
+Consumer: Donde se consumen los datos o se utilizan las funciones.
