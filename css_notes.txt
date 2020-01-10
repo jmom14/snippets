@@ -1,10 +1,80 @@
-porcentaje sirve para disenno responsive
-u. medida pz, em, rem
-colores rgb ventaja puede tener un cuarto parametro que representa la opacidad
-elemntos inline y block
-inline ocupa el espacio necesario
-block ocupa todo el ancho
+Porcentaje sirve para el diseño responsive
 
-inline no se puede modificar height, width, margin  
+Relativas a la tipografía
+	em: Relativo al tamaño de fuente de un elemento. Si, por ejemplo, utilizamos 3em (font-size: 3em); mi texto aumentará 3 veces su tamaño en relación al tamaño que se esté utilizando por defecto.
+	ex: Aumenta el tamaño de mi letra en cuanto a su altura.
+	Rem: Es igual a (em) con la diferencia de que este actúa en la raíz. O sea, en la letra que esté utilizando por defecto.
+Relativas al viewport - ventana
+	vw: Porcentaje relativo a la anchura del viewport.
+	vh: Porcentaje relativo a la altura del viewport.
+	vmin: Entre vw y vh toma el que tenga menor valor.
+	vmax: Entre vw y vh toma el que tenga mayor valor.
 
-5 poscionamiento (static, absolute, relative, flotante, fixed)
+Colores rgb ventaja puede tener un cuarto parametro que representa la opacidad ej. rgba(0, 0, 0, .5);
+
+display: inline: ocupa el espacio necesario y no se puede modificar height, width, margin  
+display: block: ocupa todo el ancho
+display: inline-block: combinacion de ambos
+
+----------------------------------------------------------Flexbox system----------------------------------------------------------
+
+flex-direction: row|column|row-reverse|column-reverse
+flex-wrap: wrap|no-wrap|wrap-reverse
+flex-flow: (flex-direction) (flex-wrap)
+justify-content: flex-start|flex-end|center|space-around|space-between
+align-items: flex-start|flex-end|center|stretch|baseline -------> una solo hilera 
+align-content: flex-start|flex-end|center|stretch|space-between|space-around -------> un grupo de hileras
+
+flex-grow: 1;
+flex-shrink: 1;
+flex: 1 1 100%;
+order:1;
+align-self:flex-start|flex-end|center|stretch|baseline
+
+margin -> border -> padding
+border: 5px solid red;
+
+When flex-direction is row, flex-basis controls width.
+But when flex-direction is column, flex-basis controls height.
+
+position: static | relative | absolute | fixed | inherit
+
+static: posicion original
+
+relative: mide las coordenadas a partir de su posicion original, 
+		conserva su espacio en el flujo
+		definir alto para poder ajustar top|bottom en porcentaje
+
+absolute: mide las coordenadas respecto al ancestro mas cercano que este posicionado de otra manera al body-viewport
+		el ancho de un elemento posicionado esta definido por su contenido
+		pierde su espacio en el flujo
+
+fixed: mide las coordenadas respecto a la ventana del navegador
+		
+
+
+Flujo: orden en el que aparecen los elementos
+Cuando un elemento esta posicionado ya es posible sacarlo del flujo
+absolute y fixed sale del flujo automaticamente
+
+Todo elemento posicionado: top | right | button | left | z-index
+
+------------------------------------------------------------Grid system--------------------------------------------------------------
+
+grid-template-columns: 50% 50% 1fr ----> fr proporcion
+column-gap: 10px
+row-gap: 10px
+grid-gap: 10px -----> columns & rows
+
+grid-template-columns: repeat(3, 1fr)= 1fr 1fr
+grid-template-rows: 1fr 2 fr 1fr
+grid-auto-rows: 3fr -----> renglones extra despues de la propiedad de arriba
+
+
+
+
+ {senseItem.exampleItems.length > 0 ? renderShowExamples() : null}
+ {isShowingExamples ? (
+        <div className="flashcardeditordefinitionfield__examplefieldscontainer">
+          <button type="button" onClick={toggleNewExampleField}>{isShowingNewExampleField ? 'Hide' : 'Add Example'}</button>
+    

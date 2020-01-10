@@ -1,0 +1,7 @@
+docker-compose up
+
+docker-machine ip
+
+docker ps
+
+docker logs ContainerName/ContainerID
