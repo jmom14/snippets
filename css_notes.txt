@@ -27,6 +27,7 @@ align-content: flex-start|flex-end|center|stretch|space-between|space-around ---
 
 flex-grow: 1;
 flex-shrink: 1;
+flex: flex-grow | flex-shrink | flex-basis
 flex: 1 1 100%;
 order:1;
 align-self:flex-start|flex-end|center|stretch|baseline
