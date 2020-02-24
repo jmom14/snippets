@@ -16,3 +16,7 @@ unzip file.zip
 
 //execute jars
 java -jar file.jar
+
+
+//install db
+dpkg -i file.deb
