@@ -20,3 +20,7 @@ java -jar file.jar
 
 //install db
 dpkg -i file.deb
+
+
+//install rpm
+ sudo rpm -ivh file.rpm
