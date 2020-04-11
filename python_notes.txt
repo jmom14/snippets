@@ -1,3 +1,9 @@
-docker-compose exec server python manage.py migrate
+docker-compose exec server python manage.py makemigrations
 docker-compose exec server python manage.py applymigrations
+docker-compose exec server python manage.py migrate
 docker-compose exec server python manage.py shell_plus
+
+docker-compose exec server python manage.py setupdev
+docker-compose exec server python manage.py seedtestbooks
+
+
