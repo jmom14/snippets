@@ -1,0 +1,7 @@
+npm run start 
+npm install --global <PACKAGE>
+npm install --dev <PACKAGE>
+
+npx install-peerdeps --dev <PACKAGE>
+npx install-peerdeps --global <PACKAGE>
+--save / add to package.json
