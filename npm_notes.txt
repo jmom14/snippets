@@ -5,3 +5,7 @@ npm install --dev <PACKAGE>
 npx install-peerdeps --dev <PACKAGE>
 npx install-peerdeps --global <PACKAGE>
 --save / add to package.json
+
+npm info <PACKAGE> peerDependencies
+npm cache clean --force 
+

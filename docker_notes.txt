@@ -6,6 +6,3 @@ docker ps
 
 docker logs ContainerName/ContainerID
 
-
-sudo netstat -nlp | grep <PORT>
-sudo kill <PID>

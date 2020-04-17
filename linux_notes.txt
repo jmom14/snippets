@@ -10,6 +10,7 @@ mv directorio ruta_de_destino/nombre_directorio
 
 //extract/install
 tar -xzvf jdk-8u65-linux-x64.gz
+sudo make install
 
 //zip
 unzip file.zip	
@@ -24,3 +25,6 @@ dpkg -i file.deb
 
 //install rpm
  sudo rpm -ivh file.rpm
+
+sudo netstat -nlp | grep <PORT>
+sudo kill <PID>
