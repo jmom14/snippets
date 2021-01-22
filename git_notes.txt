@@ -1,19 +1,24 @@
-git config --global user.name 'John Doe'
+HEAD: Puntero que apunta a el commit que tenemos en revision
+
+git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 
 git intit 
 gid add .
-git commit -m 'mensaje'
+git commit -m "mensaje"
 git remote add origin https://github.com/jmom14/SQL-SNIPPETS.git
 git push origin master
 
-git checkout 'rama'
-git checkout -b 'rama' //Crear y cambiar rama
+git checkout "branch"
+git checkout -b "branch" //Crear y cambiar rama
 git branch //see the current branch
-git branch -d 'branch-to-delete'
-git push origin --delete "branch-to-delete"
+git branch -d "branch"
+git push origin --delete "branch"
 
 git log --online --decorate
-git revert 'hash-id-commit'
-git revert --no-commit 'hash-id-commit'
+git revert "hash-id-commit"
+
+## revert many comments
+git revert --no-commit "hash-id-commit"
 git revert -m 1 <commit-hash> //for merge commits
+

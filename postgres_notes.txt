@@ -1,1 +1,2 @@
 psql -h 192.168.99.100 -U postgres -d anuka_dev
+docker exec -it anuka_db_1 psql -h 192.168.99.100 -U postgres -d anuka_dev
