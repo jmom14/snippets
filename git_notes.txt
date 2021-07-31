@@ -15,10 +15,21 @@ git branch //see the current branch
 git branch -d "branch"
 git push origin --delete "branch"
 
+##show commits in one line
 git log --online --decorate
 git revert "hash-id-commit"
 
 ## revert many comments
 git revert --no-commit "hash-id-commit"
 git revert -m 1 <commit-hash> //for merge commits
+
+##reset commit
+git reset f5f0388
+
+##reset hard
+git reset --hard f4f0388
+
+##reset soft 
+git reset --soft f4f0388
+
 
