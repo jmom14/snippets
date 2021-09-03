@@ -8,3 +8,6 @@ python manage.py seedtestbooks
 #create django app
 python manage.py startapp <appname>
 
+#install pip
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python3 get-pip.py
