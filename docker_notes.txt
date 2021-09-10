@@ -11,15 +11,32 @@ docker image ls
 #remove images
 docker image rm <image id>
 
+@
+
 #initialize docker container
 docker start <docker id>
 
 #stop docker container
-docker stop <docker id>
+docker stop <container-id>
 
 #remove docker container
-docker rm <docker id>
+docker rm <container-id>
 
 #see logs
-docker logs ContainerName/ContainerID
+docker logs contianer-name/container-id
 
+#remove all continers
+docker system prune
+
+#list volumes
+docker volume ls
+
+#remove all volumes
+docker volume prune
+
+#scale containers
+docker-compose up --scale <container-id>=<instances-number> -d --force-recreate
+"add a ports range"
+
+#see container stats
+docker stats
