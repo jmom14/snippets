@@ -2,7 +2,24 @@ docker-compose up
 
 docker-machine ip
 
-docker ps
+#list all the containers
+docker ps -a
 
+#list images
+docker image ls
+
+#remove images
+docker image rm <image id>
+
+#initialize docker container
+docker start <docker id>
+
+#stop docker container
+docker stop <docker id>
+
+#remove docker container
+docker rm <docker id>
+
+#see logs
 docker logs ContainerName/ContainerID
 
