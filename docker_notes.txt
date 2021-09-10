@@ -11,8 +11,6 @@ docker image ls
 #remove images
 docker image rm <image id>
 
-@
-
 #initialize docker container
 docker start <docker id>
 
