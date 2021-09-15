@@ -1,0 +1,4 @@
+curl --data "title=Hello&body=Hello world" https://www.foo.com
+curl -o test.txt https://www.foo.com
+curl -o https://www.foo.com
+curl -X GET https://www.foo.com
