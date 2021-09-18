@@ -1,5 +1,21 @@
-docker-compose up
+Images
+Images are only read-only templates used to create containers
+Images are created with the docker build command, either by us or by other docker users
+Images are composed of layers of other images
+Images are stored in a Docker registry
 
+Containers
+If an image is a class, then a container is an instance of a class - a runtime object
+Containers are lightweight and portable encapsulations of an environment in which to run applications
+Containers are crated from images. Inside a container, it has all the binaries and dependencies needed to run the application.
+
+Registries and repositories
+A registry is where we store our images.
+You can host your own registry, or you can use Docker's public registry which is called DockerHub
+Inside registry, images are stored in repositories
+Docker repsository is a collection of different docker images with the same name, that have different tags, each tag usually represents a diffeent version of the image
+
+docker-compose up
 docker-machine ip
 
 #list all the containers
@@ -38,3 +54,9 @@ docker-compose up --scale <container-id>=<instances-number> -d --force-recreate
 
 #see container stats
 docker stats
+
+#run commands in docker
+docker run <image-id> ls /
+
+-i flag starts an interactive container
+-t flag creates a pseudo-TTY that attaches stdin and stdout
