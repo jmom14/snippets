@@ -15,6 +15,10 @@ You can host your own registry, or you can use Docker's public registry which is
 Inside registry, images are stored in repositories
 Docker repsository is a collection of different docker images with the same name, that have different tags, each tag usually represents a diffeent version of the image
 
+Create docker images
+-Commit changes in a docker container
+-Write a Dockerfile
+
 docker-compose up
 docker-machine ip
 
@@ -58,5 +62,10 @@ docker stats
 #run commands in docker
 docker run <image-id> ls /
 
+#inspect
+docker inspect container_id
+
 -i flag starts an interactive container
 -t flag creates a pseudo-TTY that attaches stdin and stdout
+-d flag starts the container in detached mode
+--name flag to name the container
