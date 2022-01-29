@@ -1,13 +1,8 @@
 npm i -g create-react-app
-create-react-app sample-app
+npx create-react-app sample-app
+npx create-react-app sample-app --template typescript
 
 Diseño orientado a componentes lo que permite que solo actualice una parte de la aplicacion
-
-Ciclo de vida react
-componentDidMount()
-componentWillMount()
-componentDidUpdate()
-componentWillUnmount()
 
 Context API
 
@@ -18,3 +13,5 @@ Puede actualizar el state desde el hijo.
 Provider: Donde se crean los datos, state y funciones.
 
 Consumer: Donde se consumen los datos o se utilizan las funciones.
+
+Refs provides us quick and simple access to the DOM Element represented by a React Element.
