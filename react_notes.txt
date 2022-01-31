@@ -15,3 +15,5 @@ Provider: Donde se crean los datos, state y funciones.
 Consumer: Donde se consumen los datos o se utilizan las funciones.
 
 Refs provides us quick and simple access to the DOM Element represented by a React Element.
+
+Using an arrow function like this works because arrow functions do not have their own this context. Instead, this will refer to the context in which the arrow function was defined—in this case, the current instance of SubmitButton.
