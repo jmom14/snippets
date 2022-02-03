@@ -91,6 +91,12 @@ Diferencia entre callable y runable: callable si regresa informacion, runable
 
 Rest es la arquitectura y restful es la implementacion de la arquitectura con web services
 
+Spring is a lightweight application framework.
+Spring framework is a java EE framework that is used to build applications.
+
+Spring Boot is an open source Java-based framework used to create a micro Service. It is developed by Pivotal Team and is used to build stand-alone and production ready spring applications.
+Spring Boot is a spring-based framework that is mainly used to develop REST API’S.
+
 403 (Acceso prohibido)
 400 (petición incorrecta, p.ej. falta un campo o su valor no es válido)
 404 (Not found)
