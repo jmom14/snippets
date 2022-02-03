@@ -1,4 +1,4 @@
-REST is an acronym for REpresentational State Transfer
+REST is an acronym for Representational State Transfer
 
 1. Guiding Principles of REST
 1.1. Uniform Interface
@@ -9,3 +9,24 @@ REST is an acronym for REpresentational State Transfer
 1.6. Code on demand (optional)
 
 In simple words, in the REST architectural style, data and functionality are considered resources and are accessed using Uniform Resource Identifiers (URIs).
+
+Encapusulation: All important information is contained inside an object and only select information is exposed. This characteristic of data hiding provides greater program security and avoids unintended data corruption.
+
+Abstraction: Objects only reveal internal mechanisms that are relevant for the use of other objects, hiding any unnecessary implementation code.
+
+Inheritance: Classes can reuse code from other classes.
+
+Polymorphism: Objects are designed to share behaviors and they can take on more than one form. 
+
+DRY: Don't repeat yourself.
+KISS: Keep it simple stupid.
+YAGNI: You are not gonna need it.
+GRASP: General Responsibility Assignment Software Patterns.
+
+SOLID:
+Single Responsibility Principle:One class should serve only one purpose
+Open-Closed Principle: Entities should be open for extension, but closed for modification.
+Liskov Substitution Principle: Subclass/derived classes should be substitutable for their base/parent class.
+Interface Segregation Principle: A client should not be forced to implement an interface that it doesn’t use.
+Dependency Inversion Principle: Depend on abstractions, not on concretions.
+
