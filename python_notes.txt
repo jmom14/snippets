@@ -15,24 +15,7 @@ python3 get-pip.py
 #install list of requirements
 python3 -m pip install -r requirements.txt
 
-Generators are functions that return an iterable collection of items, one at a time, in a set manner.
-
-.py files contain the source code of a program. Whereas, .pyc file contains the bytecode of your program.
-
-Python as a language is not interpreted or compiled. Interpreted or compiled is the property of the implementation. Python is a bytecode(set of interpreter readable instructions) interpreted generally.
-
-This bytecode can be then interpreted by the official CPython or JIT(Just in Time compiler) compiled by PyPy.
-
-Iterators are objects with which we can iterate over iterable objects like lists, strings, etc.
-
-*args is a special syntax used in the function definition to pass variable-length arguments.
-
-**kwargs is a special syntax used in the function definition to pass variable-length keyworded arguments.
-
-Lambda functions are generally inline, anonymous functions represented by a single expression. They are used for creating function objects during runtime. They can accept any number of parameters. They are usually used where functions are required only for a short period. 
-
-GIL stands for Global Interpreter Lock. This is a mutex used for limiting access to python objects and aids in effective thread synchronization by avoiding deadlocks. GIL helps in achieving multitasking (and not parallel computing). The following diagram represents how GIL works.
-
-Dynamic - Data Types are checked during execution. Type-checking is done on the fly
+#create virtual environment
+python3 -m venv ./venv
 
 Pickling is the name of the serialization process in Python. Any object in Python can be serialized into a byte stream and dumped as a file in the memory.
