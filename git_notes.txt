@@ -22,3 +22,5 @@ git revert "hash-id-commit"
 git revert --no-commit "hash-id-commit"
 git revert -m 1 <commit-hash> //for merge commits
 
+Revert file to master
+git checkout origin/master "filename" 
