@@ -69,6 +69,9 @@ docker run <image-id> ls /
 #inspect
 docker inspect container_id
 
+#run tests
+docker exec <name_container> python -m pytest
+
 -i flag starts an interactive container
 -t flag creates a pseudo-TTY that attaches stdin and stdout
 -d flag starts the container in detached mode
