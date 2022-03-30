@@ -32,4 +32,7 @@ git reset --hard f4f0388
 ##reset soft 
 git reset --soft f4f0388
 
+# update submodules 
+git sobmodule update --remote --recursive
+
 
