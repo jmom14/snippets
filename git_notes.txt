@@ -35,4 +35,5 @@ git reset --soft f4f0388
 # update submodules 
 git sobmodule update --remote --recursive
 
-
+# pull, fetch and udpate of all submodules
+git pull --recurse-submodules
