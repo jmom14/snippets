@@ -5,6 +5,9 @@ python manage.py shell_plus
 python manage.py setupdev
 python manage.py seedtestbooks
 
+#create django project
+django-admin startproject mysite
+
 #create django app
 python manage.py startapp <appname>
 
