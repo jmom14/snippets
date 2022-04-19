@@ -12,8 +12,14 @@ git push origin master
 git checkout "branch"
 git checkout -b "branch" //Crear y cambiar rama
 git branch //see the current branch
-git branch -d "branch"
 git push origin --delete "branch"
+
+## Remove local branch
+git branch -d "branch"
+git branch -D <branch-name>
+
+## Remove remote branch
+git push origin --delete <remote-branch-name>
 
 ##show commits in one line
 git log --online --decorate
