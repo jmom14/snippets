@@ -8,6 +8,15 @@ In JavaScript inheritance is achieved by traversing prototype chains.
 
 Prototype objects can be linked with each other to create chains. JavaScript internally can traverse these chains and look for methods and properties
 
-A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function’s scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
+A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). 
+In other words, a closure gives you access to an outer function’s scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
 
 The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+
+A Promise is in one of these states:
+  pending: initial state, neither fulfilled nor rejected.
+  fulfilled: meaning that the operation was completed successfully.
+  rejected: meaning that the operation failed.
+ 
+The methods Promise.prototype.then(), Promise.prototype.catch(), and Promise.prototype.finally() are used to associate further action with a 
+promise that becomes settled.
