@@ -24,6 +24,7 @@ pip freeze > requirements.txt
 #create virtual environment
 python3 -m venv ./venv
 python3 -m venv env
+python3 -m venv .env
 
 #start virtualenv
 source env/bin/activate
