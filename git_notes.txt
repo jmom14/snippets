@@ -43,3 +43,6 @@ git sobmodule update --remote --recursive
 
 # pull, fetch and udpate of all submodules
 git pull --recurse-submodules
+
+git checkout origin/master filename.tsx
+
