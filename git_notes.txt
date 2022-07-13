@@ -3,6 +3,9 @@ HEAD: Puntero que apunta a el commit que tenemos en revision
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 
+## Global
+git config --global --edit
+
 git intit 
 gid add .
 git commit -m "mensaje"
