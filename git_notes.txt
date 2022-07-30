@@ -21,6 +21,9 @@ git push origin --delete "branch"
 git branch -d "branch"
 git branch -D <branch-name>
 
+## Compare branches 
+git diff HEAD~1 HEAD
+
 ## Remove remote branch
 git push origin --delete <remote-branch-name>
 
@@ -31,6 +34,9 @@ git revert "hash-id-commit"
 ## revert many comments
 git revert --no-commit "hash-id-commit"
 git revert -m 1 <commit-hash> //for merge commits
+
+## revert HEAD
+git revert HEAD~1
 
 ##reset commit
 git reset f5f0388
