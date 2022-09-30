@@ -36,7 +36,9 @@ git revert --no-commit "hash-id-commit"
 git revert -m 1 <commit-hash> //for merge commits
 
 ## revert HEAD
-git revert HEAD~1
+git revert --no-commit HEAD
+git revert --no-commit HEAD~1
+git revert --continue
 
 ##reset commit
 git reset f5f0388
@@ -62,3 +64,7 @@ git reset --hard origin/master
 #reset head with origin
 git fetch origin
 git reset --hard origin/master
+
+#Add changes to a commit
+git add the_left_out_file
+git commit --amend --no-edit
