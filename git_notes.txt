@@ -68,3 +68,10 @@ git reset --hard origin/master
 #Add changes to a commit
 git add the_left_out_file
 git commit --amend --no-edit
+
+# Squash commits when merging
+git merge --squash feature-branch
+git commit -m "Merge commit"
+
+# It will retrieve the commmits from feature branch and apply them into master branch
+git rebase feature
