@@ -114,7 +114,57 @@ def twoSum(self, nums, target):
             
     return output
 
+def twoSum(self, nums, target: int):
+        
+        fm = {}
+
+        for i in range(len(nums)):
+            current = nums[i]
+            lookup = target - current
+            
+            if lookup in fm:
+                return [i, fm[lookup]]
+            fm.update({current: i})    
+
 '''
 Link: https://leetcode.com/problems/contains-duplicate/
 Problem: Contains Duplicate
+Input: [1,2,3,1]
+Output: true
 '''
+
+def containsDuplicate(self, nums) -> bool:
+    copy = set()
+    
+    for num in nums:
+        if num in copy:
+            return True
+        
+        copy.add(num)
+        
+    return False
+
+'''
+Link: https://leetcode.com/problems/longest-substring-without-repeating-characters/
+Problem: Longest Substring Without Repeating Characters
+Input: "abcabcbb"
+Output: 3
+'''
+
+def lengthOfLongestSubstring(self, s: str) -> int:
+    a = 0
+    b = 0
+    current = set()
+    output = 0
+    
+    while b < len(s):
+        if not s[b] in current:
+            current.add(s[b])  
+            b+=1
+            output = max(output, len(current))
+            
+        else:
+            current.remove(s[a])
+            a+=1
+            
+    return output
