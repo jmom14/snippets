@@ -65,6 +65,9 @@ git reset --hard origin/master
 git fetch origin
 git reset --hard origin/master
 
+#clean all files
+git clean -df
+
 #Add changes to a commit
 git add the_left_out_file
 git commit --amend --no-edit
