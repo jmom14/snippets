@@ -23,8 +23,14 @@ Create docker images
 -Commit changes in a docker container
 -Write a Dockerfile
 
+Builds, (re)creates, starts, and attaches to containers for a service.
 docker-compose up
-docker-machine ip
+
+Restarts all stopped and running services, or the specified services only.
+docker-compose restart
+
+Stops containers and removes containers, networks, volumes, and images created by up.
+docker compose down
 
 #list all the containers
 docker ps -a
