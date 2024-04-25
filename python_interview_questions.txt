@@ -1,0 +1,80 @@
+What is the Difference Between a Shallow Copy and Deep Copy?
+
+Shallow copy creates a different object and populates it with the references of the child objects within the original object. Therefore, 
+changes in the original object are reflected in the copy.
+copy.copy() creates a Shallow Copy.
+
+Deepcopy creates a different object and populates it with the child objects of the original object. Therefore, changes in the original 
+object are not reflected in the copy.
+copy.deepcopy() creates a Deep Copy.
+
+
+Are Arguments in Python Passed by Value or by Reference?
+Arguments are passed in python by a reference. This means that any changes made within a function are reflected in the original object.
+
+
+What Is the Difference Between a List and a Tuple?
+Lists are mutable while tuples are immutable
+
+“in Python, Functions Are First-class Objects.” What Do You Infer from This?
+It means that a function can be treated just like an object. You can assign them to variables, or pass them as arguments to other functions. 
+You can even return them from other functions.
+
+Explain Python namespace.
+In Python, a namespace refers to the name that is assigned to each object.
+
+
+What are decorators in Python?
+Decorators are used for changing the appearance of a function without changing its structure. Decorators are typically defined prior to the function they are enhancing.
+
+
+What are unpickling and pickling?
+The Pickle module takes any Python object and converts it to a string representation, which it then dumps into a file using the dump method. This is known as pickling. 
+Unpickling is the process of recovering original Python objects from a stored text representation.
+
+
+What are generators in Python?
+Functions which return an iterable set of items are known as generators.
+
+What are built-in types of Python?
+Given below are the built-in types of Python:
+
+Built in functions
+Boolean
+String
+Complex numbers
+Floating point
+Integers
+
+
+What are modules and packages in Python?
+
+Modules, in general, are simply Python files with a .py extension and can have a set of functions, classes, or variables defined and implemented. 
+They can be imported and initialized once using the import statement. 
+If partial functionality is needed, import the requisite classes or functions using from foo import bar.
+
+Packages allow for hierarchial structuring of the module namespace using dot notation. 
+As, modules help avoid clashes between global variable names, in a similar manner, packages help avoid clashes between module names.
+
+
+What are global, protected and private attributes in Python?
+
+Global variables are public variables that are defined in the global scope. To use the variable in the global scope inside a function, we use the global keyword.
+Protected attributes are attributes defined with an underscore prefixed to their identifier eg. _sara. 
+They can still be accessed and modified from outside the class they are defined in but a responsible developer should refrain from doing so.
+
+Private attributes are attributes with double underscore prefixed to their identifier eg. __ansh. 
+They cannot be accessed or modified from the outside directly and will result in an AttributeError if such an attempt is made.
+
+
+What are generators in Python?
+Generators are functions that return an iterable collection of items, one at a time, in a set manner. 
+Generators, in general, are used to create iterators with a different approach. 
+They employ the use of yield keyword rather than return to return a generator object.
+
+
+What are Iterators in Python?
+In Python, iterators are used to iterate a group of elements, containers like a list. 
+Iterators are collections of items, and they can be a list, tuples, or a dictionary. 
+Python iterator implements __itr__ and the next() method to iterate the stored elements. 
+We generally use loops to iterate over the collections (list, tuple) in Python.
