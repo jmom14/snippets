@@ -115,16 +115,16 @@ def twoSum(self, nums, target):
     return output
 
 def twoSum(self, nums, target: int):
-        
-        fm = {}
+    
+    fm = {}
 
-        for i in range(len(nums)):
-            current = nums[i]
-            lookup = target - current
-            
-            if lookup in fm:
-                return [i, fm[lookup]]
-            fm.update({current: i})    
+    for i in range(len(nums)):
+        current = nums[i]
+        lookup = target - current
+        
+        if lookup in fm:
+            return [i, fm[lookup]]
+        fm.update({current: i})    
 
 '''
 Link: https://leetcode.com/problems/contains-duplicate/
@@ -162,9 +162,72 @@ def lengthOfLongestSubstring(self, s: str) -> int:
             current.add(s[b])  
             b+=1
             output = max(output, len(current))
-            
         else:
             current.remove(s[a])
             a+=1
             
     return output
+
+
+'''
+Link: https://leetcode.com/problems/fizz-buzz/
+Problem: Fizz Buzz
+Input: 15
+Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz"]
+'''
+
+def fizzBuzz(self, n: int):
+    output = []
+    for i in range(1, n + 1):
+        c = ""
+        if i % 3 == 0: 
+            c = "Fizz"
+        if i % 5 == 0: 
+            c = c + "Buzz"
+        if i % 3 != 0 and i % 5 != 0:
+            c = str(i)
+        output.append(c)
+
+    return output
+
+
+'''
+Link: https://leetcode.com/problems/reverse-string/
+Problem: Reverse String
+Input: ["h","e","l","l","o"]
+Output: ["o","l","l","e","h"]
+'''
+
+def reverseString(self, s) -> None:
+    a = 0
+    b = len(s) - 1
+
+    while b > a:
+        s[a], s[b] = s[b], s[a]
+        a = a + 1
+        b = b - 1
+
+    return s
+
+
+'''
+Problem: Binary search
+'''
+
+def binary_search(arr, a, b, search):
+    while a <= b:
+
+        mid = a + (b - a) // 2
+        if arr[mid] == search:
+            return mid
+            
+        elif arr[mid] > search:
+            b = mid - 1
+        else: 
+            a = mid + 1
+    
+    return -1
+    
+nums = [1, 5, 9, 10, 14, 16, 78, 100, 121, 122, 123]
+print(binary_search(nums, 0, len(nums) - 1, 123))
+ 
