@@ -11,6 +11,14 @@ django-admin startproject mysite
 #create django app
 python manage.py startapp <appname>
 
+#create virtual environment
+python3 -m venv ./venv
+python3 -m venv env
+python3 -m venv .env
+
+#start virtualenv
+source env/bin/activate
+
 #install pip
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python3 get-pip.py
@@ -21,15 +29,8 @@ python3 -m pip install -r requirements.txt
 # get requirements fill
 pip freeze > requirements.txt
 
-#create virtual environment
-python3 -m venv ./venv
-python3 -m venv env
-python3 -m venv .env
+#list pacakges installed globally
+pip list
 
-#start virtualenv
-source env/bin/activate
-
-#
-
-
-Pickling is the name of the serialization process in Python. Any object in Python can be serialized into a byte stream and dumped as a file in the memory.
+#uninstall packages globally
+pip freeze | xargs pip uninstall -y
