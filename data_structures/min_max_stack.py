@@ -3,36 +3,33 @@
 class Stack:
 
     def __init__(self):
-        self.__data = []
-        self.__max_history = []
-        self.__min_history = []
+        self.data = []
+        self.maxs = []
+        self.mins = []
 
 
     def push(self, value):
-        self.__data.append(value)
+        self.data.append(value)
 
-        last_max_history = self.__max_history[-1] if len(self.__max_history) > 0 else 0
-        max_value = max(value, last_max_history)
-        self.__max_history.append(max_value)
+        mx = value if len(self.mins) == 0 else max(value, self.maxs[-1])
+        self.maxs.append(mx)
 
-        last_min_histroy = self.__min_history[-1] if len(self.__min_history) > 0 else 10000000000
-        min_value = min(value, last_min_histroy)
-        self.__min_history.append(min_value)
+        mn = value if len(self.mins) == 0 else min(value, self.mins[-1])
+        self.mins.append(mn)
 
     def pop(self):
-
-        self.__max_history.pop(-1)
-        self.__min_history.pop(-1)
-        return self.__data.pop(-1)
+        self.maxs.pop(-1)
+        self.mins.pop(-1)
+        return self.data.pop(-1)
 
     def peek(self):
-        return self.__data[-1]
+        return self.data[-1]
 
     def max_value(self):
-        return self.__max_history[-1]
+        return self.maxs[-1]
 
     def min_value(self):
-        return self.__min_history[-1]
+        return self.mins[-1]
     
 
 stack = Stack()
