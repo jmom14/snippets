@@ -20,6 +20,7 @@ Lists are mutable while tuples are immutable
 It means that a function can be treated just like an object. You can assign them to variables, or pass them as arguments to other functions. 
 You can even return them from other functions.
 
+
 Explain Python namespace.
 In Python, a namespace refers to the name that is assigned to each object.
 
@@ -78,3 +79,7 @@ In Python, iterators are used to iterate a group of elements, containers like a 
 Iterators are collections of items, and they can be a list, tuples, or a dictionary. 
 Python iterator implements __itr__ and the next() method to iterate the stored elements. 
 We generally use loops to iterate over the collections (list, tuple) in Python.
+
+
+Pickling is the name of the serialization process in Python. 
+Any object in Python can be serialized into a byte stream and dumped as a file in the memory.
