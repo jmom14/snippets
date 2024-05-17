@@ -32,5 +32,11 @@ pip freeze > requirements.txt
 #list pacakges installed globally
 pip list
 
+#list packages installed locally
+pip list --local
+
 #uninstall packages globally
 pip freeze | xargs pip uninstall -y
+
+#run test with outputs
+pytest -s
