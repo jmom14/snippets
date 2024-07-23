@@ -2,22 +2,24 @@ python manage.py makemigrations
 python manage.py migrate
 python manage.py shell_plus
 
-python manage.py setupdev
-python manage.py seedtestbooks
 
-#create django project
-django-admin startproject mysite
-
-#create django app
-python manage.py startapp <appname>
-
-#create virtual environment
-python3 -m venv ./venv
-python3 -m venv env
+## Django project ##  
+mkdir <drf-simple-reader>
+cd <drf-simple-reader>
 python3 -m venv .env
+source .env/bin/activate
+pip install djangorestframework
+pip install django-rest-swagger
+django-admin startproject <api>
+cd <api>
+django-admin startapp <users>
+django-admin startapp <auth>
+django-admin startapp <reader>
+python manage.py migrate
+python manage.py createsuperuser --username admin --email admin@example.com
 
-#start virtualenv
-source env/bin/activate
+python manage.py runserver
+
 
 #install pip
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
