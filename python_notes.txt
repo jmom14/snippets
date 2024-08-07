@@ -6,10 +6,9 @@ python manage.py shell_plus
 ## Django project ##  
 mkdir <drf-simple-reader>
 cd <drf-simple-reader>
-python3 -m venv .env
-source .env/bin/activate
+python3 -m venv .venv
+source .venv/bin/activate
 pip install djangorestframework
-pip install django-rest-swagger
 django-admin startproject <api>
 cd <api>
 django-admin startapp <users>
